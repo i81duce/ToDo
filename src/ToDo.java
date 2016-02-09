@@ -29,11 +29,11 @@ public class ToDo {
             else if (option.equals("3")) {
                 int i = 1;
                 for (ToDoItem item: items) {
-                    String checkbox = "[ ] ";
+                    String checkbox = "[ ]";
                     if (item.isDone) {
                         checkbox = "[x] ";
                     }
-                    System.out.println(checkbox + i + ". " + item.text);
+                    System.out.printf("%s %d. %s\n", checkbox, i, item.text); //Important!!!!1
                     i++;
                 }
             }
